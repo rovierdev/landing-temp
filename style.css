@@ -1,0 +1,21 @@
+.nanum {
+    font-family: 'Nanum Myeongjo', serif !important;
+}
+.inter {
+    font-family: 'Inter', sans-serif !important;
+}
+.anybody {
+    font-family: 'Anybody', sans-serif !important;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.animate-rotation {
+    animation: rotate 6s linear infinite; /* Adjust duration and timing function as needed */
+  }
