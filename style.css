@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .nanum {
     font-family: 'Nanum Myeongjo', serif !important;
 }
@@ -19,3 +22,10 @@
 .animate-rotation {
     animation: rotate 6s linear infinite; /* Adjust duration and timing function as needed */
   }
+
+  .indicator.active,
+    .indicator:focus {
+      background-color: #EA4026 !important; /* Use !important to ensure priority */
+      border-color: transparent;
+      width: 1.35rem;
+    }
