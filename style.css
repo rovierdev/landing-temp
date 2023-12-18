@@ -1,6 +1,23 @@
 html {
     scroll-behavior: smooth;
 }
+button.has-down .indicator { pointer-events:none; }
+
+.before-test::before {
+    
+    content: "";
+      position: absolute;
+      top: -40%; /* Adjust positioning to ensure continuous blur */
+      left: -25%; /* Adjust positioning to ensure continuous blur */
+      width: 20%;
+      
+      border-radius: 100%; /* Makes the box round */
+      
+      box-shadow: 0 0 100px 600px rgba(0,0,0, 0.2);
+      z-index: -1;
+      
+}
+
 .nanum {
     font-family: 'Nanum Myeongjo', serif !important;
 }
@@ -9,6 +26,12 @@ html {
 }
 .anybody {
     font-family: 'Anybody', sans-serif !important;
+}
+.grotesk {
+    font-family: 'Hanken Grotesk', sans-serif !important;
+}
+.sometype {
+    font-family: 'Sometype Mono', monospace !important;
 }
 
 @keyframes rotate {
@@ -23,9 +46,22 @@ html {
     animation: rotate 6s linear infinite; /* Adjust duration and timing function as needed */
   }
 
-  .indicator.active,
-    .indicator:focus {
-      background-color: #EA4026 !important; /* Use !important to ensure priority */
-      border-color: transparent;
-      width: 1.35rem;
-    }
+.indicator:active {
+    outline: none;
+    background-color: #EA4026 !important; /* Use !important to ensure priority */
+    border-color: transparent;
+    width: 1.35rem !important;
+}
+.indicator:hover {
+    outline: none;
+    background-color: #EA4026 !important; /* Use !important to ensure priority */
+    border-color: transparent;
+    
+}
+.indicator:focus {
+    outline: none;
+    background-color: #EA4026 !important; /* Use !important to ensure priority */
+    border-color: transparent;
+    width: 1.35rem !important;
+}
+

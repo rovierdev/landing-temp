@@ -11,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@125,365&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Myeongjo:wght@400;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>    
-        
-    <div class="h-screen sm:min-h-screen max-w-5xl mx-auto flex flex-col px-10">
-        <div class=" flex sm:relative items-center justify-between w-full mt-16 sm:my-20 flex-col sm:flex-row" >
-            <h1 class="flex items-center justify-center mx-auto sm:text-6xl text-5xl tracking-tighter nanum">Rovier</h1>
+
+    <div class="h-screen sm:min-h-screen max-w-8xl xl:max-w-7xl lg:max-w-5xl md:max-w-4xl mx-auto flex flex-col px-10">
+      
+        <div class=" flex sm:relative items-center justify-between w-full mt-16 sm:my-20 flex-col sm:flex-row " >
+            <div class="flex items-center justify-center mx-auto "><img src="logo.png" class="w-52 sm:w-60" alt=""></div>
             <a href="#get-started">
             <button type="button" class="sm:absolute sm:inset-0 sm:my-auto sm:mt-auto mt-7 w-max items-center ml-auto flex-initial bg-transparent group border border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black rounded-lg h-10 px-5 text-center inline-flex transition-all ease-in-out">
                 
@@ -27,8 +28,8 @@
           </a>
               
         </div>
-        <div class="flex-grow sm:my-auto mx-auto flex items-center justify-center">
-            <img src="phones.png" alt="" class="mx-auto">
+        <div class="flex-grow sm:my-auto">
+            <img src="hand.png" alt="" class="sm:w-[50vw] float-right -mr-28 -mt-20">
         </div>
         
         <div class="mb-16 max-w-4xl flex flex-row">
@@ -60,8 +61,8 @@
         </div>
     </div>
     <div id="learn-more" class="bg-[#131313] ">
-        <div class="max-w-5xl mx-auto text-white pt-12 px-10 sm:px-0">
-            <h1 class="text-3xl sm:text-5xl font-extralight pb-12 sm:leading-10">Our platform provides <span class="nanum sm:leading-relaxed font-bold text-[#EA4026]">small businesses</span> with a new and reliable way to procure goods from <span class="nanum sm:leading-10 font-bold text-[#EA4026]">various</span> sources, <span class="nanum font-bold text-[#EA4026] sm:leading-relaxed">improved efficiency</span> and <span class="nanum font-bold text-[#EA4026] ">lowered overhead costs.</span></h1>
+        <div class="max-w-8xl xl:max-w-7xl lg:max-w-5xl md:max-w-4xl mx-auto text-white pt-12 px-10 sm:px-0">
+            <h1 class="text-3xl sm:text-5xl lg:leading-none font-extralight pb-12">Our platform provides <span class="nanum font-bold text-[#EA4026]">small businesses</span> with a new and reliable way to procure goods from <span class="nanum font-bold text-[#EA4026]">various</span> sources, <span class="nanum font-bold text-[#EA4026]">improved efficiency</span> and <span class="nanum font-bold text-[#EA4026] ">lowered overhead costs.</span></h1>
             
             <div class="flex pb-12">
                 <h1 class="uppercase font-extralight text-md sm:text-lg">How we do it</h1>
@@ -71,11 +72,11 @@
             </div>
         </div>
     </div>
-    <div class="max-w-4xl px-10 sm:px-0 mx-auto justify-center items-center">
+    <div class="max-w-7xl xl:max-w-6xl lg:max-w-4xl md:max-w-3xl px-10 sm:px-0 mx-auto justify-center items-center">
         <h1 class="text-4xl sm:text-6xl anybody pt-24 text-center">Lorem ipsum dolor sit amet</h1>
         <h1 class="text-md sm:text-xl max-w-2xl mx-auto pt-12 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
         <div class="mx-auto grid grid-cols-2 sm:justify-center sm:space-x-3 sm:flex-row sm:flex items-center py-12 place-items-center gap-2">
-            <button onclick="toggleDiv('slider_connectivity')" type="button" class="w-min bg-transparent group border my-auto border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black hover:text-[#EA4026] rounded-lg h-10 px-5 text-center inline-flex items-center transition-all">
+            <button onclick="toggleDiv('slider_connectivity')" type="button" data-active-classes="border-[#EA4026] text-[#EA4026]" data-inactive-classes="text-gray-500" class="w-min bg-transparent group border my-auto border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black hover:text-[#EA4026] rounded-lg h-10 px-5 text-center inline-flex items-center transition-all">
                 Connectivity
                 
             </button>
@@ -170,13 +171,13 @@
                   </div>
               </div>
               <div class="flex items-center justify-center mt-4">
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(0)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(1)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(2)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(3)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(4)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(5)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(6)"></button>
+                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(0, event)"></button>
+                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(1, event)"></button>
+                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(2, event)"></button>
+                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(3, event)"></button>
+                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(4, event)"></button>
+                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(5, event)"></button>
+                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(6, event)"></button>
                 
               </div>
         </div>
@@ -253,13 +254,13 @@
                 </div>
             </div>
             <div class="flex items-center justify-center mt-4">
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_service(0)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_service(1)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_service(2)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_service(3)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_service(4)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_service(5)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_service(6)"></button>
+              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(0)"></button>
+              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(1)"></button>
+              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(2)"></button>
+              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(3)"></button>
+              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(4)"></button>
+              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(5)"></button>
+              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(6)"></button>
               
             </div>
       </div>
@@ -432,7 +433,7 @@
   </div>
 
     <div class="bg-[#131313] mt-24 px-10 sm:px-0" id="get-started">
-        <div class="max-w-5xl mx-auto text-white pt-12">
+        <div class="max-w-8xl xl:max-w-7xl lg:max-w-5xl md:max-w-4xl mx-auto text-white pt-12">
             <h1 class="text-3xl sm:text-5xl font-extralight leading-tight pb-12"><span class="nanum font-bold text-[#EA4026]">Rovier</span> is intentionally flexible, to meet the needs of our clients — we’d be happy to get in contact to answer any questions you may have.</h1>
             
             <div class="flex pb-12">
@@ -443,7 +444,7 @@
             </div>
         </div>
     </div>
-    <div class="max-w-5xl mx-auto my-20 px-10 sm:px-0" >
+    <div class="max-w-8xl xl:max-w-7xl lg:max-w-5xl md:max-w-4xl mx-auto my-20 px-10 sm:px-0" >
         <svg class="animate-rotation w-20" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M36.7168 61.02V67.2427H34.0309C33.569 67.2427 33.1649 67.1586 32.8186 66.9905C32.4722 66.8224 32.2028 66.5803 32.0103 66.2643C31.8179 65.9483 31.7217 65.5696 31.7217 65.128C31.7217 64.6823 31.8209 64.3066 32.0194 64.0007C32.2159 63.6948 32.4924 63.4639 32.8489 63.308C33.2034 63.152 33.6177 63.074 34.0917 63.074H35.6959V64.3866H34.432C34.2334 64.3866 34.0643 64.4109 33.9245 64.4595C33.7827 64.5102 33.6744 64.5902 33.5994 64.6995C33.5225 64.8089 33.484 64.9517 33.484 65.128C33.484 65.3062 33.5225 65.4511 33.5994 65.5625C33.6744 65.6759 33.7827 65.7589 33.9245 65.8116C34.0643 65.8663 34.2334 65.8936 34.432 65.8936H35.0275V61.02H36.7168ZM33.0707 63.8761L31.5151 61.02H33.3503L34.8695 63.8761H33.0707Z" fill="#EA4026"/>
 <path d="M24.9634 59.1931C25.4392 59.3663 25.8123 59.6088 26.0825 59.9205C26.352 60.2342 26.5156 60.5934 26.5731 60.998C26.6299 61.4045 26.5765 61.8324 26.413 62.2816C26.2495 62.7308 26.0157 63.0919 25.7116 63.3649C25.4067 63.6398 25.0506 63.8099 24.6432 63.875C24.2351 63.942 23.7931 63.8889 23.3173 63.7157C22.8414 63.5425 22.4687 63.2991 22.1992 62.9854C21.9289 62.6737 21.7654 62.3145 21.7086 61.908C21.6511 61.5033 21.7041 61.0764 21.8676 60.6272C22.0311 60.178 22.2653 59.8159 22.5701 59.541C22.8742 59.268 23.2304 59.098 23.6385 59.031C24.0459 58.9659 24.4875 59.0199 24.9634 59.1931ZM24.5279 60.3539C24.3947 60.3054 24.2633 60.3082 24.1336 60.3623C24.004 60.4164 23.8824 60.5166 23.7688 60.6628C23.6552 60.809 23.5569 60.9963 23.4738 61.2247C23.3899 61.4551 23.3449 61.6618 23.3386 61.8449C23.3316 62.0299 23.3604 62.1848 23.4249 62.3095C23.4894 62.4343 23.5883 62.521 23.7215 62.5695C23.8624 62.6208 23.9995 62.62 24.133 62.5673C24.2664 62.5145 24.3899 62.4151 24.5035 62.2688C24.6164 62.1246 24.7147 61.9372 24.7986 61.7069C24.8817 61.4785 24.9268 61.2718 24.9337 61.0868C24.9407 60.9018 24.91 60.7462 24.8417 60.62C24.7734 60.4939 24.6688 60.4051 24.5279 60.3539Z" fill="#EA4026"/>
@@ -463,7 +464,7 @@
             
         <h1 class="mt-5 anybody text-3xl sm:text-6xl max-w-2xl">Begin your Rovier journey today.</h1>
         <div class="flex-col sm:flex sm:flex-row">
-            <input class="mt-10 mb-4 sm:mb-0 placeholder:tracking-widest inter placeholder:text-gray-400 block bg-[#F0F0F0] border border-[#838383] rounded-md w-full sm:w-3/4 mr-10 py-2 pl-4 shadow-sm focus:outline-none sm:text-sm" placeholder="example@random.com" type="text" name="signup"/>
+            <input class="flex-grow mt-10 mb-4 sm:mb-0 placeholder:tracking-widest inter placeholder:text-gray-400 block bg-[#F0F0F0] border border-[#838383] rounded-md w-full sm:w-3/4 mr-10 py-2 pl-4 shadow-sm focus:outline-none sm:text-sm" placeholder="example@random.com" type="text" name="signup"/>
             <button type="button" class=" bg-transparent group border border-black inter text-xs uppercase tracking-widest hover:border-[#EA4026] text-black rounded-lg mt-auto h-10 px-5 text-center inline-flex items-center transition-all ease-in-out">
                 Get Started
                 <svg class="group-hover:translate-x-1.5 transition-all ease-in-out rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

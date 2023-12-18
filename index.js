@@ -13,8 +13,15 @@ function toggleDiv(clickedDivId) {
       }
     });
   }
+  document.addEventListener("DOMContentLoaded", function() {
+    var b = document.getElementById('indicator');
+    b.addEventListener('click', b.classList.add('active'), false);
+    console.log('here');
+});
+  
 
-  function scrolltoslide(index) {
+  function scrolltoslide(index, event) {
+    if (event && event.preventDefault) { event.preventDefault(); event.currentTarget.classList.add('active'); console.log('here'); }
     const carousel = document.getElementById('connectivity_carousel');
     const targetSlide = document.querySelectorAll('.connectivity_slide')[index];
 
