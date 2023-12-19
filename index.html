@@ -2,6 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rovier</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
@@ -9,474 +11,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@125,365&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Myeongjo:wght@400;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sometype+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Rovier</title>
 </head>
-<body>    
-
-    <div class="h-screen sm:min-h-screen max-w-8xl xl:max-w-7xl lg:max-w-5xl md:max-w-4xl mx-auto flex flex-col px-10">
-      
-        <div class=" flex sm:relative items-center justify-between w-full mt-16 sm:my-20 flex-col sm:flex-row " >
-            <div class="flex items-center justify-center mx-auto "><img src="logo.png" class="w-52 sm:w-60" alt=""></div>
-            <a href="#get-started">
-            <button type="button" class="sm:absolute sm:inset-0 sm:my-auto sm:mt-auto mt-7 w-max items-center ml-auto flex-initial bg-transparent group border border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black rounded-lg h-10 px-5 text-center inline-flex transition-all ease-in-out">
+<body class="overflow-x-hidden bg-[#f7f9fa]">
+    <div class="md:min-h-screen 2xl:min-h-max 2xl:mb-12">
+        <header class="px-10 py-6 fixed w-full top-0 z-10 flex justify-between items-center bg-[#f7f9fa]">
+            <div class="mx-auto md:mx-0">
+                <img src="rovier1.png" alt="Logo" class="h-7 md:h-8">
+            </div>
+            <div class="hidden md:block">
+                <button type="button" class=" w-max items-center ml-auto flex-initial bg-transparent group border border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black rounded-lg h-10 px-5 text-center inline-flex transition-all ease-in-out">
                 
-                Get Started
-                <svg class="group-hover:translate-x-1.5 transition-all ease-in-out rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="#EA4026" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-              
-            </button>
-          </a>
-              
-        </div>
-        <div class="flex-grow sm:my-auto">
-            <img src="hand.png" alt="" class="sm:w-[50vw] float-right -mr-28 -mt-20">
-        </div>
-        
-        <div class="mb-16 max-w-4xl flex flex-row">
-            <a href="#learn-more">
-            <svg class="animate-rotation w-12 sm:w-16" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M36.2911 61.0247V67.2478H35.3521V61.8329H32.5323V61.0247H36.2911Z" fill="#EA4026"/>
-                <path d="M29.852 60.6038L28.3627 66.6461L24.5745 65.7124L24.7679 64.9276L27.6445 65.6366L28.0982 63.7956L25.4193 63.1353L25.612 62.3535L28.2909 63.0138L28.7469 61.1639L25.8349 60.4462L26.0283 59.6614L29.852 60.6038Z" fill="#EA4026"/>
-                <path d="M23.908 58.7493L24.7905 59.2125L19.9156 63.682L18.955 63.1779L19.8641 56.6269L20.7466 57.0901L19.9377 62.4171L19.9808 62.4397L23.908 58.7493ZM22.6275 60.8295L19.7648 59.327L20.1319 58.6274L22.9947 60.1299L22.6275 60.8295Z" fill="#EA4026"/>
-                <path d="M18.4254 55.4451L14.2987 60.1032L12.6383 58.6323C12.2775 58.3125 12.0331 57.9851 11.9052 57.6498C11.7757 57.3133 11.7493 56.9826 11.8258 56.658C11.901 56.3349 12.0655 56.03 12.3194 55.7434C12.5719 55.4584 12.8541 55.2605 13.166 55.1498C13.475 55.0393 13.8024 55.0302 14.1481 55.1227C14.4923 55.2138 14.8448 55.4192 15.2057 55.7389L16.4634 56.8532L15.9275 57.4582L14.7334 56.4003C14.5059 56.1988 14.2921 56.0675 14.0918 56.0065C13.89 55.9441 13.7006 55.9455 13.5237 56.0107C13.3469 56.0759 13.1812 56.1957 13.0267 56.3701C12.8709 56.546 12.77 56.7286 12.7241 56.9179C12.6766 57.1059 12.6947 57.2978 12.7783 57.4937C12.859 57.6897 13.0154 57.8905 13.2474 58.096L14.1298 58.8778L17.7226 54.8225L18.4254 55.4451ZM14.2641 55.5096L14.975 52.3884L15.7756 53.0977L15.0419 56.1987L14.2641 55.5096Z" fill="#EA4026"/>
-                <path d="M6.20536 50.7439L11.3269 47.2088L11.8171 47.919L9.85789 53.115L9.89068 53.1625L13.6468 50.5698L14.1802 51.3425L9.05866 54.8777L8.56498 54.1625L10.5275 48.9606L10.4947 48.9131L6.73355 51.5092L6.20536 50.7439Z" fill="#EA4026"/>
-                <path d="M2.6265 41.3012L2.48915 40.1701L7.05257 37.6202L7.04378 37.5478L2.00275 36.1642L1.8654 35.033L8.04313 34.2829L8.15081 35.1697L3.68041 35.7125L3.68737 35.7699L8.36995 37.0501L8.45932 37.7861L4.21617 40.1501L4.22313 40.2075L8.69655 39.6643L8.80423 40.5511L2.6265 41.3012Z" fill="#EA4026"/>
-                <path d="M5.7515 27.8007C6.4111 27.8808 6.96354 28.0704 7.40883 28.3693C7.85211 28.668 8.17593 29.043 8.38029 29.4943C8.58289 29.9434 8.65183 30.4343 8.58712 30.9672C8.52217 31.5022 8.33749 31.9644 8.03307 32.3539C7.72689 32.7412 7.32185 33.0267 6.81796 33.2104C6.31407 33.3941 5.73333 33.446 5.07574 33.3661C4.41614 33.286 3.8647 33.0966 3.42142 32.7979C2.97613 32.499 2.65218 32.125 2.44959 31.676C2.24523 31.2247 2.17552 30.7315 2.24047 30.1966C2.30518 29.6637 2.49063 29.2036 2.79681 28.8163C3.10123 28.4268 3.50538 28.1402 4.00927 27.9565C4.51115 27.7726 5.0919 27.7207 5.7515 27.8007ZM5.63942 28.7238C5.13667 28.6627 4.70347 28.6928 4.33982 28.8139C3.9744 28.9328 3.68611 29.1223 3.47496 29.3823C3.26204 29.6401 3.13409 29.946 3.09112 30.2999C3.0479 30.6558 3.09881 30.9844 3.24385 31.2857C3.38687 31.5867 3.62144 31.8397 3.94755 32.0446C4.27189 32.2472 4.68544 32.379 5.18818 32.4401C5.69093 32.5011 6.12501 32.4722 6.49043 32.3533C6.85409 32.2322 7.14237 32.0427 7.35529 31.7849C7.5662 31.5269 7.69326 31.2199 7.73648 30.864C7.77946 30.51 7.72943 30.1825 7.58641 29.8815C7.44161 29.5783 7.20704 29.3253 6.8827 29.1227C6.55659 28.9178 6.14216 28.7848 5.63942 28.7238Z" fill="#EA4026"/>
-                <path d="M9.40672 26.6452L3.58802 24.4385L4.3746 22.3644C4.54557 21.9136 4.7651 21.569 5.03319 21.3305C5.30201 21.0901 5.60175 20.9482 5.93243 20.9046C6.26121 20.8603 6.6046 20.906 6.96258 21.0418C7.31867 21.1768 7.60378 21.3705 7.81788 21.6229C8.03082 21.8726 8.15535 22.1755 8.19149 22.5315C8.22834 22.8857 8.16129 23.2881 7.99032 23.7389L7.39446 25.3101L6.63871 25.0235L7.2044 23.5319C7.31215 23.2477 7.35907 23.0012 7.34515 22.7923C7.33194 22.5815 7.26349 22.4049 7.13978 22.2627C7.01607 22.1204 6.8453 22.008 6.62748 21.9254C6.40776 21.8421 6.20124 21.8125 6.00792 21.8367C5.81531 21.8589 5.64227 21.9439 5.48879 22.0915C5.33414 22.2365 5.20186 22.4539 5.09195 22.7437L4.67388 23.8461L9.73967 25.7673L9.40672 26.6452ZM7.87085 22.7772L11.0413 22.3352L10.662 23.3352L7.50234 23.7488L7.87085 22.7772Z" fill="#EA4026"/>
-                <path d="M12.1288 20.6542L7.00724 17.1191L9.2236 13.9082L9.8888 14.3673L8.20581 16.8055L9.76627 17.8826L11.3336 15.612L11.9963 16.0694L10.429 18.3401L11.9969 19.4224L13.7006 16.9541L14.3658 17.4133L12.1288 20.6542Z" fill="#EA4026"/>
-                <path d="M21.9166 8.92856C21.7696 9.00575 21.6158 9.0201 21.4554 8.97161C21.294 8.92133 21.1742 8.82175 21.0961 8.67287C21.0189 8.52578 21.0059 8.37245 21.0571 8.21287C21.1074 8.0515 21.2061 7.93222 21.3532 7.85502C21.5003 7.77782 21.6545 7.76437 21.8159 7.81466C21.9763 7.86315 22.0951 7.96094 22.1723 8.10802C22.2241 8.20667 22.2465 8.31044 22.2396 8.41931C22.2335 8.52544 22.2029 8.62391 22.1476 8.7147C22.0923 8.80549 22.0153 8.87678 21.9166 8.92856Z" fill="#EA4026"/>
-                <path d="M33.265 8V1.7769L34.2039 1.7769V7.19173L37.0237 7.19173V8L33.265 8Z" fill="#EA4026"/>
-                <path d="M39.704 8.4206L41.1933 2.37833L44.9815 3.31204L44.7881 4.09683L41.9115 3.38782L41.4578 5.22882L44.1367 5.88911L43.944 6.67095L41.2651 6.01066L40.8091 7.86051L43.7211 8.57825L43.5277 9.36304L39.704 8.4206Z" fill="#EA4026"/>
-                <path d="M45.648 10.2754L44.7655 9.81218L49.6405 5.34263L50.601 5.84675L49.6919 12.3978L48.8094 11.9346L49.6183 6.60759L49.5752 6.58499L45.648 10.2754ZM46.9285 8.19519L49.7913 9.69768L49.4241 10.3972L46.5614 8.89473L46.9285 8.19519Z" fill="#EA4026"/>
-                <path d="M51.1307 13.5795L55.2574 8.92147L56.9177 10.3924C57.2786 10.7121 57.523 11.0396 57.6509 11.3748C57.7803 11.7114 57.8068 12.042 57.7302 12.3667C57.6551 12.6898 57.4905 12.9946 57.2367 13.2812C56.9841 13.5663 56.7019 13.7642 56.39 13.8749C56.081 13.9854 55.7536 13.9944 55.4079 13.902C55.0638 13.8109 54.7112 13.6055 54.3504 13.2858L53.0926 12.1715L53.6286 11.5665L54.8227 12.6243C55.0501 12.8258 55.264 12.9571 55.4643 13.0182C55.6661 13.0806 55.8554 13.0792 56.0323 13.014C56.2092 12.9487 56.3748 12.8289 56.5293 12.6546C56.6851 12.4787 56.786 12.2961 56.832 12.1067C56.8794 11.9187 56.8614 11.7268 56.7778 11.531C56.697 11.3349 56.5407 11.1342 56.3087 10.9286L55.4262 10.1468L51.8335 14.2022L51.1307 13.5795ZM55.292 13.5151L54.581 16.6363L53.7804 15.927L54.5141 12.826L55.292 13.5151Z" fill="#EA4026"/>
-                <path d="M63.3506 18.2807L58.2291 21.8158L57.7389 21.1056L59.6981 15.9097L59.6653 15.8622L55.9092 18.4548L55.3758 17.6821L60.4973 14.147L60.991 14.8622L59.0285 20.0641L59.0613 20.1116L62.8224 17.5155L63.3506 18.2807Z" fill="#EA4026"/>
-                <path d="M66.9295 27.7234L67.0669 28.8546L62.5035 31.4044L62.5123 31.4768L67.5533 32.8605L67.6906 33.9916L61.5129 34.7418L61.4052 33.8549L65.8756 33.3121L65.8687 33.2548L61.1861 31.9746L61.0967 31.2385L65.3399 28.8745L65.3329 28.8172L60.8595 29.3604L60.7518 28.4735L66.9295 27.7234Z" fill="#EA4026"/>
-                <path d="M63.8045 41.2237C63.1449 41.1436 62.5925 40.9541 62.1472 40.6551C61.7039 40.3564 61.3801 39.9814 61.1757 39.5301C60.9731 39.0811 60.9042 38.5901 60.9689 38.0572C61.0338 37.5223 61.2185 37.06 61.5229 36.6705C61.8291 36.2832 62.2341 35.9977 62.738 35.8141C63.2419 35.6304 63.8227 35.5784 64.4803 35.6583C65.1399 35.7384 65.6913 35.9278 66.1346 36.2265C66.5799 36.5254 66.9038 36.8994 67.1064 37.3485C67.3108 37.7998 67.3805 38.2929 67.3155 38.8278C67.2508 39.3607 67.0654 39.8208 66.7592 40.2081C66.4548 40.5976 66.0506 40.8842 65.5467 41.0679C65.0448 41.2518 64.4641 41.3038 63.8045 41.2237ZM63.9166 40.3006C64.4193 40.3617 64.8525 40.3316 65.2162 40.2105C65.5816 40.0916 65.8699 39.9021 66.081 39.6421C66.294 39.3843 66.4219 39.0784 66.4649 38.7245C66.5081 38.3686 66.4572 38.04 66.3122 37.7387C66.1691 37.4377 65.9346 37.1847 65.6085 36.9799C65.2841 36.7772 64.8706 36.6454 64.3678 36.5843C63.8651 36.5233 63.431 36.5522 63.0656 36.6711C62.7019 36.7922 62.4136 36.9817 62.2007 37.2395C61.9898 37.4975 61.8627 37.8045 61.8195 38.1605C61.7765 38.5144 61.8266 38.8419 61.9696 39.1429C62.1144 39.4461 62.349 39.6991 62.6733 39.9017C62.9994 40.1066 63.4138 40.2396 63.9166 40.3006Z" fill="#EA4026"/>
-                <path d="M60.1493 42.3795L65.968 44.5862L65.1814 46.6602C65.0104 47.111 64.7909 47.4557 64.5228 47.6942C64.254 47.9345 63.9542 48.0765 63.6236 48.1201C63.2948 48.1644 62.9514 48.1186 62.5934 47.9829C62.2373 47.8478 61.9522 47.6541 61.7381 47.4018C61.5252 47.152 61.4006 46.8491 61.3645 46.4931C61.3277 46.139 61.3947 45.7365 61.5657 45.2857L62.1615 43.7146L62.9173 44.0012L62.3516 45.4928C62.2438 45.7769 62.1969 46.0234 62.2109 46.2324C62.2241 46.4432 62.2925 46.6197 62.4162 46.762C62.5399 46.9042 62.7107 47.0167 62.9285 47.0993C63.1482 47.1826 63.3548 47.2122 63.5481 47.188C63.7407 47.1657 63.9137 47.0808 64.0672 46.9332C64.2219 46.7881 64.3541 46.5707 64.464 46.281L64.8821 45.1786L59.8163 43.2574L60.1493 42.3795ZM61.6852 46.2475L58.5147 46.6895L58.894 45.6894L62.0537 45.2758L61.6852 46.2475Z" fill="#EA4026"/>
-                <path d="M57.4272 48.3704L62.5488 51.9055L60.3324 55.1165L59.6672 54.6573L61.3502 52.2191L59.7897 51.142L58.2224 53.4127L57.5597 52.9553L59.127 50.6846L57.5591 49.6023L55.8554 52.0705L55.1902 51.6114L57.4272 48.3704Z" fill="#EA4026"/>
-                <path d="M47.6394 60.0961C47.7865 60.0189 47.9402 60.0046 48.1007 60.053C48.262 60.1033 48.3818 60.2029 48.4599 60.3518C48.5371 60.4989 48.5501 60.6522 48.4989 60.8118C48.4486 60.9732 48.3499 61.0924 48.2028 61.1696C48.0557 61.2468 47.9015 61.2603 47.7401 61.21C47.5797 61.1615 47.4609 61.0637 47.3837 60.9166C47.3319 60.818 47.3095 60.7142 47.3164 60.6054C47.3225 60.4992 47.3532 60.4008 47.4085 60.31C47.4638 60.2192 47.5407 60.1479 47.6394 60.0961Z" fill="#EA4026"/>
-                </svg>
-              </a>
-            <h1 class="ml-4 sm:ml-8 my-auto anybody text-sm sm:text-2xl ">We're reimagining the B2B e-commerce paradigm with optimization.</h1>
+                    <p>Get Started</p>
+                    <svg class="group-hover:translate-x-1.5 transition-all ease-in-out rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="#205264" class="group-hover:stroke-[#EA4026]" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                
+                </button>
+            </div>
+        </header>
+    
+        <div class="h-[7.5rem]"></div>
+        <div class="px-10 flex justify-center items-center">
+            <div class="md:mt-36 px-0 md:px-10 mx-auto justify-center items-center grid grid-rows-2 gap-y-8 grid-cols-none md:grid-cols-7 md:grid-rows-none md:gap-x-8 md:gap-y-0">
+                <div class="md:col-span-3 text-center justify-center items-center md:text-left md:justify-normal">
+                    <h1 class="inter font-bold text-4xl sm:text-5xl text-stone-800 tracking-tight">Text Area #1</h1>
+                    <h1 class="inter pt-5 text-xl sm:text-2xl font-light">Text Area #2</h1>
+                </div>
+                <div class="md:col-span-4 flex justify-center items-center">
+                    <img src="ipad.png" class="w-full max-h-96 2xl:max-h-none object-contain max-w-2xl hover:scale-110 transition-all ease-in-out duration-700" alt="">
+                </div>
+                
+            </div>
         </div>
     </div>
-    <div id="learn-more" class="bg-[#131313] ">
-        <div class="max-w-8xl xl:max-w-7xl lg:max-w-5xl md:max-w-4xl mx-auto text-white pt-12 px-10 sm:px-0">
-            <h1 class="text-3xl sm:text-5xl lg:leading-none font-extralight pb-12">Our platform provides <span class="nanum font-bold text-[#EA4026]">small businesses</span> with a new and reliable way to procure goods from <span class="nanum font-bold text-[#EA4026]">various</span> sources, <span class="nanum font-bold text-[#EA4026]">improved efficiency</span> and <span class="nanum font-bold text-[#EA4026] ">lowered overhead costs.</span></h1>
+    <div id="learn-more" class="px-10 md:px-28 mb-12 bg-[#131313] 2xl:flex justify-center items-center mt-10 md:mt-0">
+        <div class="text-white pt-12 2xl:w-4/6 ">
+            <h1 class="text-3xl sm:text-5xl lg:leading-none font-extralight pb-12">Text <span class="nanum font-bold text-[#EA4026]">Area</span> #3</h1>
             
             <div class="flex pb-12">
-                <h1 class="uppercase font-extralight text-md sm:text-lg">How we do it</h1>
+                <h1 class="uppercase font-extralight text-md sm:text-lg">Text Area #4</h1>
                 <svg class="ml-4 sm:ml-5 mt-3 w-7 sm:w-10" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.8007 1.39027L13.8007 0.846753L13.8007 1.39027ZM28.934 18.7916L28.3905 18.7916L28.3905 18.7916L28.934 18.7916ZM28.5497 27.176C28.762 27.3882 29.1061 27.3882 29.3184 27.1759L32.7773 23.717C32.9895 23.5048 32.9895 23.1606 32.7773 22.9484C32.565 22.7361 32.2209 22.7361 32.0086 22.9484L28.934 26.023L25.8594 22.9484C25.6472 22.7361 25.303 22.7361 25.0908 22.9484C24.8785 23.1606 24.8785 23.5048 25.0908 23.717L28.5497 27.176ZM28.9341 16.5237L29.4776 16.5237L29.4776 16.5237L28.9341 16.5237ZM23.6249 5.01258L23.2721 5.426L23.6249 5.01258ZM8.04416e-07 1.93387L13.8007 1.93379L13.8007 0.846753L-6.40269e-06 0.846837L8.04416e-07 1.93387ZM28.3905 18.7916L28.3905 26.7916L29.4776 26.7916L29.4775 18.7916L28.3905 18.7916ZM28.3905 16.5237L28.3905 18.7916L29.4775 18.7916L29.4776 16.5237L28.3905 16.5237ZM23.2721 5.426C26.52 8.19799 28.3906 12.2537 28.3905 16.5237L29.4776 16.5237C29.4776 11.9356 27.4677 7.57768 23.9778 4.59916L23.2721 5.426ZM13.8007 1.93379C17.2728 1.93376 20.6311 3.172 23.2721 5.426L23.9778 4.59916C21.14 2.17723 17.5315 0.846731 13.8007 0.846753L13.8007 1.93379Z" fill="#EA4026"/>
                 </svg>                    
             </div>
         </div>
     </div>
-    <div class="max-w-7xl xl:max-w-6xl lg:max-w-4xl md:max-w-3xl px-10 sm:px-0 mx-auto justify-center items-center">
-        <h1 class="text-4xl sm:text-6xl anybody pt-24 text-center">Lorem ipsum dolor sit amet</h1>
-        <h1 class="text-md sm:text-xl max-w-2xl mx-auto pt-12 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
-        <div class="mx-auto grid grid-cols-2 sm:justify-center sm:space-x-3 sm:flex-row sm:flex items-center py-12 place-items-center gap-2">
-            <button onclick="toggleDiv('slider_connectivity')" type="button" data-active-classes="border-[#EA4026] text-[#EA4026]" data-inactive-classes="text-gray-500" class="w-min bg-transparent group border my-auto border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black hover:text-[#EA4026] rounded-lg h-10 px-5 text-center inline-flex items-center transition-all">
-                Connectivity
-                
-            </button>
-            
-            
-            
-            <button onclick="toggleDiv('slider_service')" type="button" class="w-min bg-transparent group border my-auto border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black hover:text-[#EA4026] rounded-lg h-10 px-5 text-center inline-flex items-center transition-all ease-in-out">
-                Service
-                
-            </button>
-            <button onclick="toggleDiv('slider_optimization')" type="button" class=" w-min bg-transparent group border my-auto border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black hover:text-[#EA4026] rounded-lg h-10 px-5 text-center inline-flex items-center transition-all ease-in-out">
-                Optimization
-                
-            </button>
-            <button onclick="toggleDiv('slider_analysis')" type="button" class="w-min bg-transparent group border my-auto border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black hover:text-[#EA4026] rounded-lg h-10 px-5 text-center inline-flex items-center transition-all ease-in-out">
-                Analysis
-                
-            </button>
-
-        </div>
-
-        <div id="slider_connectivity" class=" mx-auto justify-center items-center px-8 py-9 border border-black rounded-lg">
-            <h1 class="text-4xl sm:text-5xl nanum font-bold">Connectivity at its <span class="text-[#EA4026]">finest</span>.</h1>
-            <h1 class="text-lg sm:text-xl pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
-            
-            
-            
-            <div class="relative snap-mandatory snap-x z-0 grid auto-cols-[15rem] grid-flow-col gap-10 overflow-hidden py-8" id="connectivity_carousel" dir="ltr">
-                <div class="connectivity_slide group col-span-1 cursor-pointer snap-center">
-                  <div class="flex w-full flex-col gap-2">
-                    <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                      <img src="https://picsum.photos/1000/1000?" class="h-full w-full object-cover transition group-hover:scale-110" />
-                    </div>
-                    <div class="text-lg font-semibold text-black">Some heading</div>
-                    <div class="font-light text-neutral-500">Some text</div>
-                  </div>
-                </div>
-                
-                <div class="connectivity_slide group col-span-1 cursor-pointer snap-center">
-                    <div class="flex w-full flex-col gap-2">
-                      <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                        <img src="https://picsum.photos/1000/1000?2" class="h-full w-full object-cover transition group-hover:scale-110" />
-                      </div>
-                      <div class="text-lg font-semibold text-black">Some heading</div>
-                      <div class="font-light text-neutral-500">Some text</div>
-                    </div>
-                  </div>
-                  <div class="connectivity_slide group col-span-1 cursor-pointer snap-center">
-                    <div class="flex w-full flex-col gap-2">
-                      <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                        <img src="https://picsum.photos/1000/1000?3" class="h-full w-full object-cover transition group-hover:scale-110" />
-                      </div>
-                      <div class="text-lg font-semibold text-black">Some heading</div>
-                      <div class="font-light text-neutral-500">Some text</div>
-                    </div>
-                  </div>
-                  <div class="connectivity_slide group col-span-1 cursor-pointer snap-center">
-                    <div class="flex w-full flex-col gap-2">
-                      <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                        <img src="https://picsum.photos/1000/1000?" class="h-full w-full object-cover transition group-hover:scale-110" />
-                      </div>
-                      <div class="text-lg font-semibold text-black">Some heading</div>
-                      <div class="font-light text-neutral-500">Some text</div>
-                    </div>
-                  </div>
-                  <div class="connectivity_slide group col-span-1 cursor-pointer snap-center">
-                    <div class="flex w-full flex-col gap-2">
-                      <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                        <img src="https://picsum.photos/1000/1000?5" class="h-full w-full object-cover transition group-hover:scale-110" />
-                      </div>
-                      <div class="text-lg font-semibold text-black">Some heading</div>
-                      <div class="font-light text-neutral-500">Some text</div>
-                    </div>
-                  </div>
-                  <div class="connectivity_slide group col-span-1 cursor-pointer snap-center">
-                    <div class="flex w-full flex-col gap-2">
-                      <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                        <img src="https://picsum.photos/1000/1000?6" class="h-full w-full object-cover transition group-hover:scale-110" />
-                      </div>
-                      <div class="text-lg font-semibold text-black">Some heading</div>
-                      <div class="font-light text-neutral-500">Some text</div>
-                    </div>
-                  </div>
-                  <div class="connectivity_slide group col-span-1 cursor-pointer snap-center">
-                    <div class="flex w-full flex-col gap-2">
-                      <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                        <img src="https://picsum.photos/1000/1000?7" class="h-full w-full object-cover transition group-hover:scale-110" />
-                      </div>
-                      <div class="text-lg font-semibold text-black">Some heading</div>
-                      <div class="font-light text-neutral-500">Some text</div>
-                    </div>
-                  </div>
-              </div>
-              <div class="flex items-center justify-center mt-4">
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(0, event)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(1, event)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(2, event)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(3, event)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(4, event)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(5, event)"></button>
-                <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide(6, event)"></button>
-                
-              </div>
-        </div>
-
-        <div id="slider_service" class="hidden mx-auto justify-center items-center px-8 py-9 border border-black rounded-lg">
-          <h1 class="text-4xl sm:text-5xl nanum font-bold">Service at its <span class="text-[#EA4026]">finest</span>.</h1>
-          <h1 class="text-lg sm:text-xl pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
-          
-          
-          
-          <div class="relative z-0 grid auto-cols-[15rem] grid-flow-col gap-10 overflow-hidden py-8" id="service_carousel" dir="ltr">
-              <div class="service_slide group col-span-1 cursor-pointer snap-center">
-                <div class="flex w-full flex-col gap-2">
-                  <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                    <img src="https://picsum.photos/1000/1000?" class="h-full w-full object-cover transition group-hover:scale-110" />
-                  </div>
-                  <div class="text-lg font-semibold text-black">Some heading</div>
-                  <div class="font-light text-neutral-500">Some text</div>
-                </div>
-              </div>
-              <div class="service_slide group col-span-1 cursor-pointer snap-center">
-                  <div class="flex w-full flex-col gap-2">
-                    <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                      <img src="https://picsum.photos/1000/1000?2" class="h-full w-full object-cover transition group-hover:scale-110" />
-                    </div>
-                    <div class="text-lg font-semibold text-black">Some heading</div>
-                    <div class="font-light text-neutral-500">Some text</div>
-                  </div>
-                </div>
-                <div class="service_slide group col-span-1 cursor-pointer snap-center">
-                  <div class="flex w-full flex-col gap-2">
-                    <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                      <img src="https://picsum.photos/1000/1000?3" class="h-full w-full object-cover transition group-hover:scale-110" />
-                    </div>
-                    <div class="text-lg font-semibold text-black">Some heading</div>
-                    <div class="font-light text-neutral-500">Some text</div>
-                  </div>
-                </div>
-                <div class="service_slide group col-span-1 cursor-pointer snap-center">
-                  <div class="flex w-full flex-col gap-2">
-                    <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                      <img src="https://picsum.photos/1000/1000?4" class="h-full w-full object-cover transition group-hover:scale-110" />
-                    </div>
-                    <div class="text-lg font-semibold text-black">Some heading</div>
-                    <div class="font-light text-neutral-500">Some text</div>
-                  </div>
-                </div>
-                <div class="service_slide group col-span-1 cursor-pointer snap-center">
-                  <div class="flex w-full flex-col gap-2">
-                    <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                      <img src="https://picsum.photos/1000/1000?5" class="h-full w-full object-cover transition group-hover:scale-110" />
-                    </div>
-                    <div class="text-lg font-semibold text-black">Some heading</div>
-                    <div class="font-light text-neutral-500">Some text</div>
-                  </div>
-                </div>
-                <div class="service_slide group col-span-1 cursor-pointer snap-center">
-                  <div class="flex w-full flex-col gap-2">
-                    <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                      <img src="https://picsum.photos/1000/1000?6" class="h-full w-full object-cover transition group-hover:scale-110" />
-                    </div>
-                    <div class="text-lg font-semibold text-black">Some heading</div>
-                    <div class="font-light text-neutral-500">Some text</div>
-                  </div>
-                </div>
-                <div class="service_slide group col-span-1 cursor-pointer snap-center">
-                  <div class="flex w-full flex-col gap-2">
-                    <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                      <img src="https://picsum.photos/1000/1000?7" class="h-full w-full object-cover transition group-hover:scale-110" />
-                    </div>
-                    <div class="text-lg font-semibold text-black">Some heading</div>
-                    <div class="font-light text-neutral-500">Some text</div>
-                  </div>
+    <div class="2xl:flex justify-center items-center">
+        <div class="py-12 px-10 md:px-28 grid grid-rows-3 grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 gap-10 2xl:w-2/3 ">
+            <div class="flex flex-row space-x-4">
+                <div class="flex-shrink-0"><img class="h-7 w-full" width="96" height="96" src="https://img.icons8.com/small/96/ea4026/vegetarian-food.png" alt="vegetarian-food"/></div>
+                <div class="flex-grow">
+                    <h1 class="anybody font-bold">Food Procurement Reinvented</h1>
+                    <h1 class="inter font-light text-base pt-2">Efficient electronic procurement with <span class="font-bold text-[#EA4026]">no technical skills required</span>! Smart mobile technology at your fingertips 24/7.</h1>
                 </div>
             </div>
-            <div class="flex items-center justify-center mt-4">
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(0)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(1)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(2)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(3)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(4)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(5)"></button>
-              <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black transition-all duration-200 cursor-pointer focus:outline-none indicator" id="indicator" onclick="scrolltoslide_service(6)"></button>
-              
+            <div class="flex flex-row space-x-4">
+                <div class="flex-shrink-0"><img class="h-7 w-full" width="96" height="96" src="https://img.icons8.com/small/96/ea4026/average-2.png" alt="average-2"/></div>
+                <div class="flex-grow">
+                    <h1 class="anybody font-bold">Text Area #7</h1>
+                    <h1 class="inter font-light text-base pt-2">Text <span class="text-[#EA4026] font-semibold">Area</span> #8</h1>
+                </div>
             </div>
-      </div>
-
-      <div id="slider_optimization" class="hidden mx-auto justify-center items-center px-8 py-9 border border-black rounded-lg">
-        <h1 class="text-4xl sm:text-5xl nanum font-bold">Optimization at its <span class="text-[#EA4026]">finest</span>.</h1>
-        <h1 class="text-lg sm:text-xl pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
-        
-        
-        
-        <div class="relative z-0 grid auto-cols-[15rem] grid-flow-col gap-10 overflow-hidden py-8" id="optimization_carousel" dir="ltr">
-            <div class="optimization_slide group col-span-1 cursor-pointer snap-center">
-              <div class="flex w-full flex-col gap-2">
-                <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                  <img src="https://picsum.photos/1000/1000?" class="h-full w-full object-cover transition group-hover:scale-110" />
+            <div class="flex flex-row space-x-4">
+                <div class="flex-shrink-0"><img class="h-7 w-full " width="96" height="96" src="https://img.icons8.com/small/96/ea4026/data-arrived.png" alt="data-arrived"/></div>
+                <div class="flex-grow">
+                    <h1 class="anybody font-bold">Text Area #9</h1>
+                    <h1 class="inter font-light text-base pt-2">Text <span class="text-[#EA4026] font-semibold">Area</span> #10</h1>
                 </div>
-                <div class="text-lg font-semibold text-black">Some heading</div>
-                <div class="font-light text-neutral-500">Some text</div>
-              </div>
-            </div>
-            <div class="optimization_slide group col-span-1 cursor-pointer snap-center">
-                <div class="flex w-full flex-col gap-2">
-                  <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                    <img src="https://picsum.photos/1000/1000?2" class="h-full w-full object-cover transition group-hover:scale-110" />
-                  </div>
-                  <div class="text-lg font-semibold text-black">Some heading</div>
-                  <div class="font-light text-neutral-500">Some text</div>
-                </div>
-              </div>
-              <div class="optimization_slide group col-span-1 cursor-pointer snap-center">
-                <div class="flex w-full flex-col gap-2">
-                  <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                    <img src="https://picsum.photos/1000/1000?3" class="h-full w-full object-cover transition group-hover:scale-110" />
-                  </div>
-                  <div class="text-lg font-semibold text-black">Some heading</div>
-                  <div class="font-light text-neutral-500">Some text</div>
-                </div>
-              </div>
-              <div class="optimization_slide group col-span-1 cursor-pointer snap-center">
-                <div class="flex w-full flex-col gap-2">
-                  <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                    <img src="https://picsum.photos/1000/1000?4" class="h-full w-full object-cover transition group-hover:scale-110" />
-                  </div>
-                  <div class="text-lg font-semibold text-black">Some heading</div>
-                  <div class="font-light text-neutral-500">Some text</div>
-                </div>
-              </div>
-              <div class="optimization_slide group col-span-1 cursor-pointer snap-center">
-                <div class="flex w-full flex-col gap-2">
-                  <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                    <img src="https://picsum.photos/1000/1000?5" class="h-full w-full object-cover transition group-hover:scale-110" />
-                  </div>
-                  <div class="text-lg font-semibold text-black">Some heading</div>
-                  <div class="font-light text-neutral-500">Some text</div>
-                </div>
-              </div>
-              <div class="optimization_slide group col-span-1 cursor-pointer snap-center">
-                <div class="flex w-full flex-col gap-2">
-                  <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                    <img src="https://picsum.photos/1000/1000?6" class="h-full w-full object-cover transition group-hover:scale-110" />
-                  </div>
-                  <div class="text-lg font-semibold text-black">Some heading</div>
-                  <div class="font-light text-neutral-500">Some text</div>
-                </div>
-              </div>
-              <div class="optimization_slide group col-span-1 cursor-pointer snap-center">
-                <div class="flex w-full flex-col gap-2">
-                  <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                    <img src="https://picsum.photos/1000/1000?7" class="h-full w-full object-cover transition group-hover:scale-110" />
-                  </div>
-                  <div class="text-lg font-semibold text-black">Some heading</div>
-                  <div class="font-light text-neutral-500">Some text</div>
-                </div>
-              </div>
-          </div>
-          <div class="flex items-center justify-center mt-4">
-            <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_optimization(0)"></button>
-            <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_optimization(1)"></button>
-            <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_optimization(2)"></button>
-            <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_optimization(3)"></button>
-            <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_optimization(4)"></button>
-            <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_optimization(5)"></button>
-            <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_optimization(6)"></button>
-            
-          </div>
-    </div>
-
-    <div id="slider_analysis" class="hidden mx-auto justify-center items-center px-8 py-9 border border-black rounded-lg">
-      <h1 class="text-4xl sm:text-5xl nanum font-bold">Analysis at its <span class="text-[#EA4026]">finest</span>.</h1>
-      <h1 class="text-lg sm:text-xl pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
-      
-      
-      
-      <div class="relative z-0 grid auto-cols-[15rem] grid-flow-col gap-10 overflow-hidden py-8" id="analysis_carousel" dir="ltr">
-          <div class="analysis_slide group col-span-1 cursor-pointer snap-center">
-            <div class="flex w-full flex-col gap-2">
-              <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                <img src="https://picsum.photos/1000/1000?" class="h-full w-full object-cover transition group-hover:scale-110" />
-              </div>
-              <div class="text-lg font-semibold text-black">Some heading</div>
-              <div class="font-light text-neutral-500">Some text</div>
-            </div>
-          </div>
-          <div class="analysis_slide group col-span-1 cursor-pointer snap-center">
-              <div class="flex w-full flex-col gap-2">
-                <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                  <img src="https://picsum.photos/1000/1000?2" class="h-full w-full object-cover transition group-hover:scale-110" />
-                </div>
-                <div class="text-lg font-semibold text-black">Some heading</div>
-                <div class="font-light text-neutral-500">Some text</div>
-              </div>
-            </div>
-            <div class="analysis_slide group col-span-1 cursor-pointer snap-center">
-              <div class="flex w-full flex-col gap-2">
-                <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                  <img src="https://picsum.photos/1000/1000?3" class="h-full w-full object-cover transition group-hover:scale-110" />
-                </div>
-                <div class="text-lg font-semibold text-black">Some heading</div>
-                <div class="font-light text-neutral-500">Some text</div>
-              </div>
-            </div>
-            <div class="analysis_slide group col-span-1 cursor-pointer snap-center">
-              <div class="flex w-full flex-col gap-2">
-                <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                  <img src="https://picsum.photos/1000/1000?4" class="h-full w-full object-cover transition group-hover:scale-110" />
-                </div>
-                <div class="text-lg font-semibold text-black">Some heading</div>
-                <div class="font-light text-neutral-500">Some text</div>
-              </div>
-            </div>
-            <div class="analysis_slide group col-span-1 cursor-pointer snap-center">
-              <div class="flex w-full flex-col gap-2">
-                <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                  <img src="https://picsum.photos/1000/1000?5" class="h-full w-full object-cover transition group-hover:scale-110" />
-                </div>
-                <div class="text-lg font-semibold text-black">Some heading</div>
-                <div class="font-light text-neutral-500">Some text</div>
-              </div>
-            </div>
-            <div class="analysis_slide group col-span-1 cursor-pointer snap-center">
-              <div class="flex w-full flex-col gap-2">
-                <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                  <img src="https://picsum.photos/1000/1000?6" class="h-full w-full object-cover transition group-hover:scale-110" />
-                </div>
-                <div class="text-lg font-semibold text-black">Some heading</div>
-                <div class="font-light text-neutral-500">Some text</div>
-              </div>
-            </div>
-            <div class="analysis_slide group col-span-1 cursor-pointer snap-center">
-              <div class="flex w-full flex-col gap-2">
-                <div class="relative aspect-square w-full overflow-hidden rounded-xl">
-                  <img src="https://picsum.photos/1000/1000?7" class="h-full w-full object-cover transition group-hover:scale-110" />
-                </div>
-                <div class="text-lg font-semibold text-black">Some heading</div>
-                <div class="font-light text-neutral-500">Some text</div>
-              </div>
-            </div>
-        </div>
-        <div class="flex items-center justify-center mt-4">
-          <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_analysis(0)"></button>
-          <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_analysis(1)"></button>
-          <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_analysis(2)"></button>
-          <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_analysis(3)"></button>
-          <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_analysis(4)"></button>
-          <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_analysis(5)"></button>
-          <button class="w-2.5 h-2.5 bg-transparent rounded-full mr-2 border border-black hover:border-transparent hover:bg-[#EA4026] transition-all duration-200 cursor-pointer focus:outline-none indicator" onclick="scrolltoslide_analysis(6)"></button>
-          
-        </div>
-  </div>
-  </div>
-
-    <div class="bg-[#131313] mt-24 px-10 sm:px-0" id="get-started">
-        <div class="max-w-8xl xl:max-w-7xl lg:max-w-5xl md:max-w-4xl mx-auto text-white pt-12">
-            <h1 class="text-3xl sm:text-5xl font-extralight leading-tight pb-12"><span class="nanum font-bold text-[#EA4026]">Rovier</span> is intentionally flexible, to meet the needs of our clients — we’d be happy to get in contact to answer any questions you may have.</h1>
-            
-            <div class="flex pb-12">
-                <h1 class="uppercase font-extralight text-md sm:text-lg">Connect with us</h1>
-                <svg class="ml-4 sm:ml-5 mt-3 w-7 sm:w-10" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.8007 1.39027L13.8007 0.846753L13.8007 1.39027ZM28.934 18.7916L28.3905 18.7916L28.3905 18.7916L28.934 18.7916ZM28.5497 27.176C28.762 27.3882 29.1061 27.3882 29.3184 27.1759L32.7773 23.717C32.9895 23.5048 32.9895 23.1606 32.7773 22.9484C32.565 22.7361 32.2209 22.7361 32.0086 22.9484L28.934 26.023L25.8594 22.9484C25.6472 22.7361 25.303 22.7361 25.0908 22.9484C24.8785 23.1606 24.8785 23.5048 25.0908 23.717L28.5497 27.176ZM28.9341 16.5237L29.4776 16.5237L29.4776 16.5237L28.9341 16.5237ZM23.6249 5.01258L23.2721 5.426L23.6249 5.01258ZM8.04416e-07 1.93387L13.8007 1.93379L13.8007 0.846753L-6.40269e-06 0.846837L8.04416e-07 1.93387ZM28.3905 18.7916L28.3905 26.7916L29.4776 26.7916L29.4775 18.7916L28.3905 18.7916ZM28.3905 16.5237L28.3905 18.7916L29.4775 18.7916L29.4776 16.5237L28.3905 16.5237ZM23.2721 5.426C26.52 8.19799 28.3906 12.2537 28.3905 16.5237L29.4776 16.5237C29.4776 11.9356 27.4677 7.57768 23.9778 4.59916L23.2721 5.426ZM13.8007 1.93379C17.2728 1.93376 20.6311 3.172 23.2721 5.426L23.9778 4.59916C21.14 2.17723 17.5315 0.846731 13.8007 0.846753L13.8007 1.93379Z" fill="#EA4026"/>
-                </svg>                    
             </div>
         </div>
     </div>
-    <div class="max-w-8xl xl:max-w-7xl lg:max-w-5xl md:max-w-4xl mx-auto my-20 px-10 sm:px-0" >
-        <svg class="animate-rotation w-20" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M36.7168 61.02V67.2427H34.0309C33.569 67.2427 33.1649 67.1586 32.8186 66.9905C32.4722 66.8224 32.2028 66.5803 32.0103 66.2643C31.8179 65.9483 31.7217 65.5696 31.7217 65.128C31.7217 64.6823 31.8209 64.3066 32.0194 64.0007C32.2159 63.6948 32.4924 63.4639 32.8489 63.308C33.2034 63.152 33.6177 63.074 34.0917 63.074H35.6959V64.3866H34.432C34.2334 64.3866 34.0643 64.4109 33.9245 64.4595C33.7827 64.5102 33.6744 64.5902 33.5994 64.6995C33.5225 64.8089 33.484 64.9517 33.484 65.128C33.484 65.3062 33.5225 65.4511 33.5994 65.5625C33.6744 65.6759 33.7827 65.7589 33.9245 65.8116C34.0643 65.8663 34.2334 65.8936 34.432 65.8936H35.0275V61.02H36.7168ZM33.0707 63.8761L31.5151 61.02H33.3503L34.8695 63.8761H33.0707Z" fill="#EA4026"/>
-<path d="M24.9634 59.1931C25.4392 59.3663 25.8123 59.6088 26.0825 59.9205C26.352 60.2342 26.5156 60.5934 26.5731 60.998C26.6299 61.4045 26.5765 61.8324 26.413 62.2816C26.2495 62.7308 26.0157 63.0919 25.7116 63.3649C25.4067 63.6398 25.0506 63.8099 24.6432 63.875C24.2351 63.942 23.7931 63.8889 23.3173 63.7157C22.8414 63.5425 22.4687 63.2991 22.1992 62.9854C21.9289 62.6737 21.7654 62.3145 21.7086 61.908C21.6511 61.5033 21.7041 61.0764 21.8676 60.6272C22.0311 60.178 22.2653 59.8159 22.5701 59.541C22.8742 59.268 23.2304 59.098 23.6385 59.031C24.0459 58.9659 24.4875 59.0199 24.9634 59.1931ZM24.5279 60.3539C24.3947 60.3054 24.2633 60.3082 24.1336 60.3623C24.004 60.4164 23.8824 60.5166 23.7688 60.6628C23.6552 60.809 23.5569 60.9963 23.4738 61.2247C23.3899 61.4551 23.3449 61.6618 23.3386 61.8449C23.3316 62.0299 23.3604 62.1848 23.4249 62.3095C23.4894 62.4343 23.5883 62.521 23.7215 62.5695C23.8624 62.6208 23.9995 62.62 24.133 62.5673C24.2664 62.5145 24.3899 62.4151 24.5035 62.2688C24.6164 62.1246 24.7147 61.9372 24.7986 61.7069C24.8817 61.4785 24.9268 61.2718 24.9337 61.0868C24.9407 60.9018 24.91 60.7462 24.8417 60.62C24.7734 60.4939 24.6688 60.4051 24.5279 60.3539Z" fill="#EA4026"/>
-<path d="M12.6391 56.9423L16.84 54.3749L18.3297 55.6249L16.5308 60.2078L15.1808 59.075L16.5879 56.2259L16.5507 56.1946L13.9891 58.0751L12.6391 56.9423Z" fill="#EA4026"/>
-<path d="M11.6906 48.1818L7.6488 50.5153L6.8102 49.0628L10.852 46.7293L11.6906 48.1818ZM6.80848 50.0321C6.92192 50.2286 6.95424 50.4345 6.90545 50.6498C6.85666 50.865 6.74105 51.0254 6.55861 51.1307C6.37617 51.236 6.17953 51.256 5.96869 51.1906C5.75785 51.1252 5.59572 50.9943 5.48228 50.7978C5.36783 50.5996 5.33551 50.3937 5.38531 50.1802C5.4341 49.9649 5.54972 49.8046 5.73216 49.6992C5.9146 49.5939 6.11124 49.5739 6.32207 49.6393C6.5319 49.703 6.69404 49.8339 6.80848 50.0321Z" fill="#EA4026"/>
-<path d="M8.47298 39.599C8.55951 40.0898 8.54032 40.5292 8.41542 40.9173C8.28816 41.3038 8.06488 41.624 7.74556 41.8777C7.42389 42.1299 7.0157 42.2995 6.52098 42.3868C6.04621 42.4705 5.6144 42.4479 5.22555 42.319C4.8367 42.1901 4.51275 41.9685 4.25371 41.6542C3.99466 41.34 3.82328 40.9454 3.73957 40.4707C3.67836 40.1236 3.67682 39.7999 3.73495 39.4996C3.79308 39.1994 3.90729 38.9314 4.07758 38.6957C4.24588 38.4603 4.46615 38.2631 4.73841 38.104C5.01066 37.9449 5.32931 37.8332 5.69437 37.7688L6.07738 37.7013L6.80127 41.8067L5.89162 41.9671L5.43576 39.3818C5.30445 39.407 5.19473 39.4613 5.1066 39.5447C5.01612 39.6265 4.95262 39.7271 4.91611 39.8467C4.87726 39.9646 4.86996 40.0924 4.89423 40.2301C4.9178 40.3637 4.96836 40.4813 5.04591 40.5828C5.12146 40.6847 5.21509 40.7607 5.32679 40.8109C5.43814 40.8592 5.56099 40.8735 5.69535 40.8539L6.67681 40.6809C6.82443 40.6549 6.95064 40.6007 7.05543 40.5185C7.16023 40.4362 7.23534 40.3315 7.28077 40.2042C7.3262 40.0769 7.33449 39.9314 7.30565 39.7678C7.2856 39.6541 7.25135 39.5532 7.2029 39.4651C7.1541 39.375 7.0938 39.3013 7.02199 39.244C6.94819 39.1871 6.86559 39.1502 6.77418 39.1334L6.50827 37.6253C6.83659 37.6209 7.1355 37.6947 7.40501 37.8467C7.67253 37.999 7.89926 38.2234 8.0852 38.5197C8.2688 38.8143 8.39806 39.1741 8.47298 39.599Z" fill="#EA4026"/>
-<path d="M8.10288 31.0301L3.50677 30.2196L3.78957 28.6158L4.66331 28.7699L4.67175 28.722C4.36336 28.5812 4.15036 28.4069 4.03276 28.199C3.91551 27.9891 3.87851 27.7614 3.92178 27.5161C3.93444 27.4442 3.95291 27.3745 3.97719 27.3068C3.99983 27.2367 4.02692 27.1705 4.05848 27.1082L5.46784 27.3567C5.42549 27.4336 5.38678 27.5306 5.35171 27.6479C5.31664 27.7651 5.29154 27.8666 5.27642 27.9524C5.24793 28.114 5.25915 28.2661 5.3101 28.4088C5.3594 28.5491 5.44338 28.6678 5.56202 28.7648C5.67867 28.8615 5.82477 28.9253 6.00032 28.9562L8.39413 29.3783L8.10288 31.0301Z" fill="#EA4026"/>
-<path d="M17.7056 14.0458C17.5256 14.1968 17.3185 14.2635 17.0842 14.2459C16.8502 14.2254 16.6578 14.1238 16.507 13.9409C16.357 13.7653 16.2929 13.5613 16.3147 13.3288C16.338 13.0951 16.4397 12.9027 16.6197 12.7517C16.7904 12.6084 16.9936 12.545 17.2294 12.5613C17.4668 12.5763 17.6605 12.6716 17.8104 12.8472C17.9104 12.9695 17.9711 13.1064 17.9923 13.2578C18.0139 13.4063 18.0005 13.5511 17.9522 13.6921C17.9026 13.8315 17.8204 13.9494 17.7056 14.0458Z" fill="#EA4026"/>
-<path d="M32.0996 8V1.77731L34.7856 1.77731C35.2474 1.77731 35.6515 1.86137 35.9979 2.0295C36.3443 2.19763 36.6137 2.43969 36.8061 2.75568C36.9985 3.07168 37.0948 3.45047 37.0948 3.89205C37.0948 4.33769 36.9955 4.71344 36.797 5.01931C36.6005 5.32518 36.324 5.5561 35.9675 5.71207C35.613 5.86804 35.1988 5.94603 34.7248 5.94603L33.1205 5.94603V4.63343L34.3845 4.63343C34.583 4.63343 34.7521 4.60912 34.8919 4.56051C35.0337 4.50987 35.1421 4.42985 35.217 4.32047C35.294 4.21109 35.3325 4.06828 35.3325 3.89205C35.3325 3.7138 35.294 3.56897 35.217 3.45756C35.1421 3.34412 35.0337 3.26107 34.8919 3.20841C34.7521 3.15372 34.583 3.12637 34.3845 3.12637L33.789 3.12637V8H32.0996ZM35.7457 5.14388L37.3014 8H35.4662L33.9469 5.14388H35.7457Z" fill="#EA4026"/>
-<path d="M43.8531 9.82692C43.3772 9.65372 43.0042 9.41123 42.734 9.09947C42.4644 8.78581 42.3009 8.42666 42.2434 8.02203C42.1866 7.6155 42.2399 7.18762 42.4034 6.73841C42.5669 6.28919 42.8008 5.92808 43.1049 5.65508C43.4097 5.38018 43.7659 5.21017 44.1733 5.14504C44.5814 5.07802 45.0233 5.13111 45.4992 5.30431C45.9751 5.47751 46.3478 5.72094 46.6173 6.0346C46.8875 6.34636 47.051 6.70551 47.1079 7.11205C47.1654 7.51668 47.1124 7.9436 46.9489 8.39282C46.7854 8.84203 46.5512 9.20409 46.2464 9.47899C45.9422 9.75199 45.5861 9.922 45.178 9.98903C44.7706 10.0542 44.329 10.0001 43.8531 9.82692ZM44.2885 8.66616C44.4218 8.71465 44.5532 8.71184 44.6828 8.65771C44.8125 8.60358 44.9341 8.50341 45.0477 8.35721C45.1612 8.21101 45.2596 8.0237 45.3427 7.79528C45.4265 7.56497 45.4716 7.35826 45.4779 7.17516C45.4849 6.99016 45.4561 6.83527 45.3916 6.71047C45.3271 6.58568 45.2282 6.49903 45.0949 6.45054C44.9541 6.39927 44.8169 6.40001 44.6835 6.45275C44.55 6.50549 44.4265 6.60497 44.313 6.75117C44.2001 6.89547 44.1017 7.08278 44.0179 7.31309C43.9348 7.54151 43.8897 7.74822 43.8827 7.93322C43.8758 8.11821 43.9064 8.2738 43.9748 8.39999C44.0431 8.52617 44.1477 8.61489 44.2885 8.66616Z" fill="#EA4026"/>
-<path d="M56.1774 12.0777L51.9764 14.6451L50.4868 13.3951L52.2857 8.8122L53.6356 9.94497L52.2286 12.7941L52.2658 12.8254L54.8274 10.9449L56.1774 12.0777Z" fill="#EA4026"/>
-<path d="M57.1259 20.8382L61.1677 18.5047L62.0063 19.9572L57.9645 22.2907L57.1259 20.8382ZM62.008 18.9879C61.8945 18.7914 61.8622 18.5855 61.911 18.3703C61.9598 18.155 62.0754 17.9947 62.2579 17.8893C62.4403 17.784 62.6369 17.764 62.8478 17.8294C63.0586 17.8948 63.2208 18.0257 63.3342 18.2222C63.4486 18.4204 63.481 18.6263 63.4312 18.8399C63.3824 19.0551 63.2668 19.2155 63.0843 19.3208C62.9019 19.4261 62.7052 19.4461 62.4944 19.3807C62.2846 19.3171 62.1224 19.1861 62.008 18.9879Z" fill="#EA4026"/>
-<path d="M60.3435 29.421C60.257 28.9303 60.2761 28.4908 60.4011 28.1027C60.5283 27.7162 60.7516 27.396 61.0709 27.1423C61.3926 26.8902 61.8008 26.7205 62.2955 26.6333C62.7703 26.5495 63.2021 26.5721 63.5909 26.701C63.9798 26.8299 64.3037 27.0515 64.5628 27.3658C64.8218 27.68 64.9932 28.0746 65.0769 28.5493C65.1381 28.8964 65.1396 29.2201 65.0815 29.5204C65.0234 29.8207 64.9092 30.0887 64.7389 30.3244C64.5706 30.5597 64.3503 30.757 64.0781 30.916C63.8058 31.0751 63.4872 31.1868 63.1221 31.2512L62.7391 31.3187L62.0152 27.2133L62.9248 27.053L63.3807 29.6383C63.512 29.6131 63.6217 29.5587 63.7099 29.4753C63.8004 29.3936 63.8638 29.2929 63.9004 29.1733C63.9392 29.0554 63.9465 28.9276 63.9222 28.79C63.8987 28.6563 63.8481 28.5387 63.7706 28.4372C63.695 28.3354 63.6014 28.2593 63.4897 28.2091C63.3783 28.1608 63.2555 28.1465 63.1211 28.1661L62.1397 28.3391C61.992 28.3652 61.8658 28.4193 61.761 28.5015C61.6562 28.5838 61.5811 28.6886 61.5357 28.8159C61.4903 28.9432 61.482 29.0886 61.5108 29.2522C61.5309 29.3659 61.5651 29.4668 61.6136 29.5549C61.6624 29.6451 61.7227 29.7188 61.7945 29.776C61.8683 29.833 61.9509 29.8698 62.0423 29.8866L62.3082 31.3947C61.9799 31.3991 61.681 31.3253 61.4115 31.1733C61.1439 31.021 60.9172 30.7967 60.7313 30.5004C60.5477 30.2057 60.4184 29.8459 60.3435 29.421Z" fill="#EA4026"/>
-<path d="M60.7136 37.99L65.3097 38.8004L65.0269 40.4042L64.1532 40.2502L64.1447 40.298C64.4531 40.4388 64.6661 40.6131 64.7837 40.8211C64.901 41.031 64.938 41.2586 64.8947 41.504C64.882 41.5758 64.8636 41.6455 64.8393 41.7132C64.8166 41.7833 64.7895 41.8495 64.758 41.9118L63.3486 41.6633C63.391 41.5864 63.4297 41.4894 63.4648 41.3722C63.4998 41.2549 63.5249 41.1534 63.54 41.0676C63.5685 40.9061 63.5573 40.7539 63.5064 40.6112C63.4571 40.4709 63.3731 40.3522 63.2544 40.2552C63.1378 40.1585 62.9917 40.0947 62.8162 40.0638L60.4223 39.6417L60.7136 37.99Z" fill="#EA4026"/>
-<path d="M51.1109 54.9742C51.2909 54.8232 51.498 54.7565 51.7323 54.7741C51.9663 54.7946 52.1587 54.8962 52.3095 55.0791C52.4594 55.2547 52.5236 55.4587 52.5018 55.6912C52.4784 55.9249 52.3768 56.1173 52.1968 56.2684C52.0261 56.4116 51.8229 56.475 51.587 56.4587C51.3497 56.4437 51.156 56.3484 51.006 56.1728C50.906 56.0505 50.8454 55.9136 50.8241 55.7622C50.8026 55.6137 50.816 55.4689 50.8643 55.3279C50.9139 55.1885 50.9961 55.0706 51.1109 54.9742Z" fill="#EA4026"/>
-            </svg>
-            
-        <h1 class="mt-5 anybody text-3xl sm:text-6xl max-w-2xl">Begin your Rovier journey today.</h1>
-        <div class="flex-col sm:flex sm:flex-row">
-            <input class="flex-grow mt-10 mb-4 sm:mb-0 placeholder:tracking-widest inter placeholder:text-gray-400 block bg-[#F0F0F0] border border-[#838383] rounded-md w-full sm:w-3/4 mr-10 py-2 pl-4 shadow-sm focus:outline-none sm:text-sm" placeholder="example@random.com" type="text" name="signup"/>
-            <button type="button" class=" bg-transparent group border border-black inter text-xs uppercase tracking-widest hover:border-[#EA4026] text-black rounded-lg mt-auto h-10 px-5 text-center inline-flex items-center transition-all ease-in-out">
-                Get Started
-                <svg class="group-hover:translate-x-1.5 transition-all ease-in-out rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="#EA4026" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </button>
+    <div class="2xl:flex justify-center items-center flex-col">
+        <div class="py-3 px-10 md:px-28 flex flex-col lg:flex-row 2xl:w-2/3">
+            <div class="lg:mr-32 basis-1/2 my-auto">
+                <h1 class="uppercase text-xs pb-4 text-[#EA4026] sometype font-bold tracking-widest">Quick & Easy</h1>
+                <h1 class="anybody text-4xl md:text-5xl pb-6">Order Optimization</h1>
+                <h1 class="inter text-lg">Minimize costs and maximize profits. Tired of searching for the best deals? Always pay the <span class="font-bold text-[#EA4026]">lowest price</span> for the quality products you want without a headache.</h1>
+            </div>
+            <div class="pt-5 lg:pt-0 basis-1/2 flex-initial">
+                <img src="optimization.svg" alt="" class="max-w-lg w-full">
+            </div>
+        </div>
+        <div class="py-3 px-10 md:px-28 flex flex-col lg:flex-row 2xl:w-2/3">
+            <div class="hidden lg:block basis-1/2 flex-initial">
+                <img src="logistics.svg" alt="" class="max-w-lg w-full">
+            </div>
+            <div class="lg:ml-32 basis-1/2 my-auto">
+                <h1 class="uppercase text-xs pb-4 text-[#EA4026] sometype font-bold tracking-widest">Text Area #11</h1>
+                <h1 class="anybody text-4xl md:text-5xl pb-6">Text Area #12</h1>
+                <h1 class="inter text-lg">Text Area #13</h1>
+            </div>
+            <div class="block lg:hidden pt-5 basis-1/2 flex-initial">
+                <img src="logistics.svg" alt="" class="max-w-lg w-full">
+            </div>
+        </div>
+        <div class="py-3 px-10 md:px-28 flex flex-col lg:flex-row 2xl:w-2/3">
+            <div class="lg:mr-32 basis-1/2 my-auto">
+                <h1 class="uppercase text-xs pb-4 text-[#EA4026] sometype font-bold tracking-widest">Text Area #14</h1>
+                <h1 class="anybody text-4xl md:text-5xl pb-6">Text Area #15</h1>
+                <h1 class="inter text-lg">Text Area #16</h1>
+            </div>
+            <div class="pt-5 lg:pt-0 basis-1/2 flex-initial">
+                <img src="finances.svg" alt="" class="max-w-lg w-full">
+            </div>
         </div>
         
-
-        
     </div>
-    <h1 class="flex items-center justify-center pb-12 text-gray-300">2023 Rovier. All Rights Reserved.</h1>
-
+    
+    
 </body>
 </html>
