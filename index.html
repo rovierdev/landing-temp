@@ -8,114 +8,218 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="index.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.16/build/spline-viewer.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@125,365&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Myeongjo:wght@400;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sometype+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Rovier</title>
 </head>
-<body class="overflow-x-hidden bg-[#f7f9fa]">
+<body class="overflow-x-hidden bg-[#fbfcfd]">
     <div class="md:min-h-screen 2xl:min-h-max 2xl:mb-12">
-        <header class="px-10 py-6 fixed w-full top-0 z-10 flex justify-between items-center bg-[#f7f9fa]">
-            <div class="mx-auto md:mx-0">
-                <img src="rovier1.png" alt="Logo" class="h-7 md:h-8">
-            </div>
-            <div class="hidden md:block">
-                <button type="button" class=" w-max items-center ml-auto flex-initial bg-transparent group border border-black inter text-xs uppercase inter tracking-widest hover:border-[#EA4026] text-black rounded-lg h-10 px-5 text-center inline-flex transition-all ease-in-out">
-                
-                    <p>Get Started</p>
+        <header class="px-10 py-6 fixed w-full top-0 z-10 flex justify-between align-middle items-center bg-[#fbfcfd]">
+            <a href="#"><div class="mx-auto md:mx-0">
+                <img src="rovier1.png" alt="Logo" class="h-7">
+            </div></a>
+            <div class="hidden md:flex space-x-10 items-center inter text-xs uppercase tracking-widest">
+                <a href="#features" class="group transition duration-300">Features <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-black"></span></a>
+                <a href="#benefits" class="group transition duration-300">Benefits <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-black"></span></a>
+                <a href="#about" class="group transition duration-300">About <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-black"></span></a>
+                <a href="#contact"><button type="button" class=" w-max items-center ml-auto flex-initial bg-transparent group border border-black inter text-xs uppercase tracking-widest hover:border-[#EA4026] hover:text-[#EA4026] text-black rounded-lg h-10 px-5 text-center inline-flex transition-all ease-in-out">
+                    <p>Contact</p>
                     <svg class="group-hover:translate-x-1.5 transition-all ease-in-out rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="#205264" class="group-hover:stroke-[#EA4026]" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    <path stroke="#000000" class="group-hover:stroke-[#EA4026]" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
                 
-                </button>
+                </button></a>
             </div>
         </header>
     
-        <div class="h-[7.5rem]"></div>
+        <div class="h-[5.5rem]"></div>
         <div class="px-10 flex justify-center items-center">
             <div class="md:mt-36 px-0 md:px-10 mx-auto justify-center items-center grid grid-rows-2 gap-y-8 grid-cols-none md:grid-cols-7 md:grid-rows-none md:gap-x-8 md:gap-y-0">
                 <div class="md:col-span-3 text-center justify-center items-center md:text-left md:justify-normal">
-                    <h1 class="inter font-bold text-4xl sm:text-5xl text-stone-800 tracking-tight">Text Area #1</h1>
-                    <h1 class="inter pt-5 text-xl sm:text-2xl font-light">Text Area #2</h1>
+                    <h1 class="font-bold text-4xl sm:text-5xl text-stone-700 tracking-tight">Click & Optimize</h1>
+                    <h1 class="pt-5 text-xl sm:text-2xl text-stone-700 font-light">Revolutionizing Foodservice Procurement</h1>
                 </div>
                 <div class="md:col-span-4 flex justify-center items-center">
-                    <img src="ipad.png" class="w-full max-h-96 2xl:max-h-none object-contain max-w-2xl hover:scale-110 transition-all ease-in-out duration-700" alt="">
+                    <img src="ipad.png" class="w-full max-h-80 2xl:max-h-none object-contain max-w-2xl hover:scale-110 transition-all ease-in-out duration-300" alt="">
                 </div>
                 
             </div>
         </div>
     </div>
-    <div id="learn-more" class="px-10 md:px-28 mb-12 bg-[#131313] 2xl:flex justify-center items-center mt-10 md:mt-0">
+    <div id="features" class="px-10 md:px-28 mb-12 bg-[#1b4453] 2xl:flex justify-center items-center mt-10 md:mt-0 scroll-m-[5.5rem]">
         <div class="text-white pt-12 2xl:w-4/6 ">
-            <h1 class="text-3xl sm:text-5xl lg:leading-none font-extralight pb-12">Text <span class="nanum font-bold text-[#EA4026]">Area</span> #3</h1>
+            <h1 class="text-3xl sm:text-5xl lg:leading-none font-extralight pb-12"><span class="nanum font-bold text-[#EA4026]">Efficient procurement</span> at your fingertips.</h1>
             
             <div class="flex pb-12">
-                <h1 class="uppercase font-extralight text-md sm:text-lg">Text Area #4</h1>
+                <h1 class="uppercase font-extralight text-md sm:text-lg">Best products, best prices, best quality</h1>
+                <!--
                 <svg class="ml-4 sm:ml-5 mt-3 w-7 sm:w-10" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.8007 1.39027L13.8007 0.846753L13.8007 1.39027ZM28.934 18.7916L28.3905 18.7916L28.3905 18.7916L28.934 18.7916ZM28.5497 27.176C28.762 27.3882 29.1061 27.3882 29.3184 27.1759L32.7773 23.717C32.9895 23.5048 32.9895 23.1606 32.7773 22.9484C32.565 22.7361 32.2209 22.7361 32.0086 22.9484L28.934 26.023L25.8594 22.9484C25.6472 22.7361 25.303 22.7361 25.0908 22.9484C24.8785 23.1606 24.8785 23.5048 25.0908 23.717L28.5497 27.176ZM28.9341 16.5237L29.4776 16.5237L29.4776 16.5237L28.9341 16.5237ZM23.6249 5.01258L23.2721 5.426L23.6249 5.01258ZM8.04416e-07 1.93387L13.8007 1.93379L13.8007 0.846753L-6.40269e-06 0.846837L8.04416e-07 1.93387ZM28.3905 18.7916L28.3905 26.7916L29.4776 26.7916L29.4775 18.7916L28.3905 18.7916ZM28.3905 16.5237L28.3905 18.7916L29.4775 18.7916L29.4776 16.5237L28.3905 16.5237ZM23.2721 5.426C26.52 8.19799 28.3906 12.2537 28.3905 16.5237L29.4776 16.5237C29.4776 11.9356 27.4677 7.57768 23.9778 4.59916L23.2721 5.426ZM13.8007 1.93379C17.2728 1.93376 20.6311 3.172 23.2721 5.426L23.9778 4.59916C21.14 2.17723 17.5315 0.846731 13.8007 0.846753L13.8007 1.93379Z" fill="#EA4026"/>
-                </svg>                    
+                    <path d="M13.8007 1.39027L13.8007 0.846753L13.8007 1.39027ZM28.934 18.7916L28.3905 18.7916L28.3905 18.7916L28.934 18.7916ZM28.5497 27.176C28.762 27.3882 29.1061 27.3882 29.3184 27.1759L32.7773 23.717C32.9895 23.5048 32.9895 23.1606 32.7773 22.9484C32.565 22.7361 32.2209 22.7361 32.0086 22.9484L28.934 26.023L25.8594 22.9484C25.6472 22.7361 25.303 22.7361 25.0908 22.9484C24.8785 23.1606 24.8785 23.5048 25.0908 23.717L28.5497 27.176ZM28.9341 16.5237L29.4776 16.5237L29.4776 16.5237L28.9341 16.5237ZM23.6249 5.01258L23.2721 5.426L23.6249 5.01258ZM8.04416e-07 1.93387L13.8007 1.93379L13.8007 0.846753L-6.40269e-06 0.846837L8.04416e-07 1.93387ZM28.3905 18.7916L28.3905 26.7916L29.4776 26.7916L29.4775 18.7916L28.3905 18.7916ZM28.3905 16.5237L28.3905 18.7916L29.4775 18.7916L29.4776 16.5237L28.3905 16.5237ZM23.2721 5.426C26.52 8.19799 28.3906 12.2537 28.3905 16.5237L29.4776 16.5237C29.4776 11.9356 27.4677 7.57768 23.9778 4.59916L23.2721 5.426ZM13.8007 1.93379C17.2728 1.93376 20.6311 3.172 23.2721 5.426L23.9778 4.59916C21.14 2.17723 17.5315 0.846731 13.8007 0.846753L13.8007 1.93379Z" fill="#ffffff"/>
+                </svg>   -->                  
             </div>
         </div>
     </div>
-    <div class="2xl:flex justify-center items-center">
-        <div class="py-12 px-10 md:px-28 grid grid-rows-3 grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 gap-10 2xl:w-2/3 ">
-            <div class="flex flex-row space-x-4">
-                <div class="flex-shrink-0"><img class="h-7 w-full" width="96" height="96" src="https://img.icons8.com/small/96/ea4026/vegetarian-food.png" alt="vegetarian-food"/></div>
-                <div class="flex-grow">
-                    <h1 class="anybody font-bold">Food Procurement Reinvented</h1>
-                    <h1 class="inter font-light text-base pt-2">Efficient electronic procurement with <span class="font-bold text-[#EA4026]">no technical skills required</span>! Smart mobile technology at your fingertips 24/7.</h1>
-                </div>
-            </div>
-            <div class="flex flex-row space-x-4">
-                <div class="flex-shrink-0"><img class="h-7 w-full" width="96" height="96" src="https://img.icons8.com/small/96/ea4026/average-2.png" alt="average-2"/></div>
-                <div class="flex-grow">
-                    <h1 class="anybody font-bold">Text Area #7</h1>
-                    <h1 class="inter font-light text-base pt-2">Text <span class="text-[#EA4026] font-semibold">Area</span> #8</h1>
-                </div>
-            </div>
-            <div class="flex flex-row space-x-4">
-                <div class="flex-shrink-0"><img class="h-7 w-full " width="96" height="96" src="https://img.icons8.com/small/96/ea4026/data-arrived.png" alt="data-arrived"/></div>
-                <div class="flex-grow">
-                    <h1 class="anybody font-bold">Text Area #9</h1>
-                    <h1 class="inter font-light text-base pt-2">Text <span class="text-[#EA4026] font-semibold">Area</span> #10</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+        
+    
+    
     <div class="2xl:flex justify-center items-center flex-col">
-        <div class="py-3 px-10 md:px-28 flex flex-col lg:flex-row 2xl:w-2/3">
+        <div class="py-10 px-10 md:px-28 flex flex-col lg:flex-row 2xl:w-2/3">
             <div class="lg:mr-32 basis-1/2 my-auto">
-                <h1 class="uppercase text-xs pb-4 text-[#EA4026] sometype font-bold tracking-widest">Quick & Easy</h1>
-                <h1 class="anybody text-4xl md:text-5xl pb-6">Order Optimization</h1>
-                <h1 class="inter text-lg">Minimize costs and maximize profits. Tired of searching for the best deals? Always pay the <span class="font-bold text-[#EA4026]">lowest price</span> for the quality products you want without a headache.</h1>
+                <h1 class="uppercase text-xs pb-3 text-[#EA4026] sometype font-bold tracking-widest">Quick & Easy</h1>
+                <h1 class="anybody text-4xl md:text-5xl pb-6 ">Order Optimization</h1>
+                <h1 class="inter text-lg">Minimize costs and maximize profits for your <span class="font-bold text-[#EA4026]">entire order</span> across multiple suppliers. Always pay the <span class="font-bold text-[#EA4026]">lowest price</span> for the quality products you want anytime, anywhere.</h1>
             </div>
             <div class="pt-5 lg:pt-0 basis-1/2 flex-initial">
-                <img src="optimization.svg" alt="" class="max-w-lg w-full">
+                <img src="groceries.jpeg" alt="" class="max-w-lg w-full rounded-lg shadow-lg">
             </div>
+            
+            
         </div>
-        <div class="py-3 px-10 md:px-28 flex flex-col lg:flex-row 2xl:w-2/3">
+        <div class="py-10 px-10 md:px-28 flex flex-col lg:flex-row 2xl:w-2/3">
             <div class="hidden lg:block basis-1/2 flex-initial">
-                <img src="logistics.svg" alt="" class="max-w-lg w-full">
+                <img src="trucks.jpeg" alt="" class="max-w-lg w-full rounded-lg shadow-lg">
             </div>
             <div class="lg:ml-32 basis-1/2 my-auto">
-                <h1 class="uppercase text-xs pb-4 text-[#EA4026] sometype font-bold tracking-widest">Text Area #11</h1>
-                <h1 class="anybody text-4xl md:text-5xl pb-6">Text Area #12</h1>
-                <h1 class="inter text-lg">Text Area #13</h1>
+                <h1 class="uppercase text-xs pb-3 text-[#EA4026] sometype font-bold tracking-widest">Flexible & Reliable</h1>
+                <h1 class="anybody text-4xl md:text-5xl pb-6">Network Management</h1>
+                <h1 class="inter text-lg">Food distributors you want and trust. No vendor lock-in: choose your own network of <span class="font-bold text-[#EA4026]">trusted brands and suppliers</span> or let Rovier help you identify what is best for your business.</h1>
             </div>
+            
             <div class="block lg:hidden pt-5 basis-1/2 flex-initial">
-                <img src="logistics.svg" alt="" class="max-w-lg w-full">
+                <img src="trucks.jpeg" alt="" class="max-w-lg w-full rounded-lg shadow-lg">
             </div>
         </div>
-        <div class="py-3 px-10 md:px-28 flex flex-col lg:flex-row 2xl:w-2/3">
+        <div class="py-10 px-10 md:px-28 flex flex-col lg:flex-row 2xl:w-2/3">
             <div class="lg:mr-32 basis-1/2 my-auto">
-                <h1 class="uppercase text-xs pb-4 text-[#EA4026] sometype font-bold tracking-widest">Text Area #14</h1>
-                <h1 class="anybody text-4xl md:text-5xl pb-6">Text Area #15</h1>
-                <h1 class="inter text-lg">Text Area #16</h1>
+                <h1 class="uppercase text-xs pb-3 text-[#EA4026] sometype font-bold tracking-widest">Simple & Informed</h1>
+                <h1 class="anybody text-4xl md:text-5xl pb-6">Financial Decisions</h1>
+                <h1 class="inter text-lg">No more paperwork. Accessible <span class="font-bold text-[#EA4026]">financial management</span> 24/7: manage all your orders, invoices, reports, and payments through a single interface.</h1>
             </div>
+            
             <div class="pt-5 lg:pt-0 basis-1/2 flex-initial">
-                <img src="finances.svg" alt="" class="max-w-lg w-full">
+                <img src="finances.avif" alt="" class="max-w-lg w-full rounded-lg shadow-lg">
             </div>
+        </div>
+        
+    </div>
+    
+    <div id="benefits" class="px-10 md:px-28 bg-[#1b4453] 2xl:flex justify-center items-center mt-10 md:mt-0 scroll-m-[5.5rem]">
+        <div class="text-white pt-12 2xl:w-4/6 ">
+            <h1 class="text-3xl sm:text-5xl lg:leading-none font-extralight pb-12">Taking financial performance to <span class="nanum font-bold text-[#EA4026]">new heights</span>.</h1>
+            
+            <div class="flex pb-12">
+                <h1 class="uppercase font-extralight text-md sm:text-lg">Success through innovation</h1>
+                <!--
+                <svg class="ml-4 sm:ml-5 mt-3 w-7 sm:w-10" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.8007 1.39027L13.8007 0.846753L13.8007 1.39027ZM28.934 18.7916L28.3905 18.7916L28.3905 18.7916L28.934 18.7916ZM28.5497 27.176C28.762 27.3882 29.1061 27.3882 29.3184 27.1759L32.7773 23.717C32.9895 23.5048 32.9895 23.1606 32.7773 22.9484C32.565 22.7361 32.2209 22.7361 32.0086 22.9484L28.934 26.023L25.8594 22.9484C25.6472 22.7361 25.303 22.7361 25.0908 22.9484C24.8785 23.1606 24.8785 23.5048 25.0908 23.717L28.5497 27.176ZM28.9341 16.5237L29.4776 16.5237L29.4776 16.5237L28.9341 16.5237ZM23.6249 5.01258L23.2721 5.426L23.6249 5.01258ZM8.04416e-07 1.93387L13.8007 1.93379L13.8007 0.846753L-6.40269e-06 0.846837L8.04416e-07 1.93387ZM28.3905 18.7916L28.3905 26.7916L29.4776 26.7916L29.4775 18.7916L28.3905 18.7916ZM28.3905 16.5237L28.3905 18.7916L29.4775 18.7916L29.4776 16.5237L28.3905 16.5237ZM23.2721 5.426C26.52 8.19799 28.3906 12.2537 28.3905 16.5237L29.4776 16.5237C29.4776 11.9356 27.4677 7.57768 23.9778 4.59916L23.2721 5.426ZM13.8007 1.93379C17.2728 1.93376 20.6311 3.172 23.2721 5.426L23.9778 4.59916C21.14 2.17723 17.5315 0.846731 13.8007 0.846753L13.8007 1.93379Z" fill="#ffffff"/>
+                </svg>   -->                  
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center flex-col bg-gray-100 pb-8 2xl:flex">
+        <h1 class="anybody text-4xl sm:text-5xl pt-16 pb-6 text-center w-2/3 justify-center">Benefits For Restaurants</h1>
+        <div class="grid grid-rows-1 md:grid-cols-3 md:grid-rows-none gap-6 py-10 2xl:w-4/6">
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                <div class="aspect-video border-b-[0.1px] border-black">
+                    <img src="ipad2.png" alt="" class="rounded-t-lg">
+                </div>
+                <div class="p-5">
+                    <a>
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Cut costs and boost profits. <span class="text-zinc-400">Optimize your entire order at once, not just specific items.</span></h5>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                <div class="aspect-video border-b-[0.1px] border-black">
+                    <img src="ipad3.png" alt="" class="rounded-t-lg">
+                </div>
+                <div class="p-5">
+                    <a>
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Make informed financial decisions. <span class="text-zinc-400">We provide comprehensive financial management at your fingertips.</span></h5>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                <div class="aspect-video rounded-t-lg">
+                    <video class="rounded-t-lg" autoplay muted loop>
+                        <source src="vid2.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="p-5">
+                    <a>
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Save time and effort. <span class="text-zinc-400">Our platform is quick, easy, and personalized for every recommendation.</span></h5>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex justify-center items-center flex-col pb-8">
+        <h1 class="anybody text-4xl sm:text-5xl pt-16 pb-6 text-center w-2/3 justify-center">Benefits for Suppliers</h1>
+        <div class="grid grid-rows-1 md:grid-cols-3 md:grid-rows-none gap-6 py-10">
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                <div class="aspect-video border-b-[0.1px] border-black">
+                    <img src="cutcost.png" alt="" class="rounded-t-lg">
+                </div>
+                <div class="p-5">
+                    <a>
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Reduce operating costs. <span class="text-zinc-400">Improve daily logistics and streamline your salesforce by 3x.</span></h5>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                <div class="aspect-video border-b-[0.1px] border-black">
+                    <img src="finmanage.png" alt="" class="rounded-t-lg">
+                </div>
+                <div class="p-5">
+                    <a>
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Increase sales revenue and boost profits. <span class="text-zinc-400">Upsell through targeted advertising.</span></h5>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                <div class="aspect-video border-b-[0.1px] border-black">
+                    <img src="customers.png" alt="" class="rounded-t-lg">
+                </div>
+                <div class="p-5">
+                    <a>
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Expand your customer base. <span class="text-zinc-400">Acquire new customers with our optimization algorithms.</span></h5>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="px-10 md:px-28 bg-[#1b4453] 2xl:flex justify-center items-center mt-10 md:mt-0 scroll-m-[5.5rem]">
+        <div class="text-white pt-12 2xl:w-4/6 ">
+            <h1 class="text-3xl sm:text-5xl lg:leading-none font-extralight pb-12">Where <span class="nanum font-bold text-[#EA4026]">vision</span> meets <span class="nanum font-bold text-[#EA4026]">reality</span>.</h1>
+            
+            <div class="flex pb-12">
+                <h1 class="uppercase font-extralight text-md sm:text-lg">Our Story</h1>
+                <!--
+                <svg class="ml-4 sm:ml-5 mt-3 w-7 sm:w-10" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.8007 1.39027L13.8007 0.846753L13.8007 1.39027ZM28.934 18.7916L28.3905 18.7916L28.3905 18.7916L28.934 18.7916ZM28.5497 27.176C28.762 27.3882 29.1061 27.3882 29.3184 27.1759L32.7773 23.717C32.9895 23.5048 32.9895 23.1606 32.7773 22.9484C32.565 22.7361 32.2209 22.7361 32.0086 22.9484L28.934 26.023L25.8594 22.9484C25.6472 22.7361 25.303 22.7361 25.0908 22.9484C24.8785 23.1606 24.8785 23.5048 25.0908 23.717L28.5497 27.176ZM28.9341 16.5237L29.4776 16.5237L29.4776 16.5237L28.9341 16.5237ZM23.6249 5.01258L23.2721 5.426L23.6249 5.01258ZM8.04416e-07 1.93387L13.8007 1.93379L13.8007 0.846753L-6.40269e-06 0.846837L8.04416e-07 1.93387ZM28.3905 18.7916L28.3905 26.7916L29.4776 26.7916L29.4775 18.7916L28.3905 18.7916ZM28.3905 16.5237L28.3905 18.7916L29.4775 18.7916L29.4776 16.5237L28.3905 16.5237ZM23.2721 5.426C26.52 8.19799 28.3906 12.2537 28.3905 16.5237L29.4776 16.5237C29.4776 11.9356 27.4677 7.57768 23.9778 4.59916L23.2721 5.426ZM13.8007 1.93379C17.2728 1.93376 20.6311 3.172 23.2721 5.426L23.9778 4.59916C21.14 2.17723 17.5315 0.846731 13.8007 0.846753L13.8007 1.93379Z" fill="#ffffff"/>
+                </svg>   -->                  
+            </div>
+        </div>
+    </div>
+    <div class="px-10 md:px-28 flex md:flex-row flex-col justify-center items-center mt-10 mb-16">
+        <div class="basis-1/2 pr-10">
+            <div class="pt-12 2xl:w-4/6 flex flex-row">
+                <img src="rovier-key.png" alt="" class="h-14 pr-6 hover:scale-90 transition-all ease-linear">
+                <h1 class="text-3xl sm:text-5xl anybody pt-1.5">About Rovier</h1> 
+            </div>
+            <h1 class="text-lg pt-8 font-light tracking-wide">Rovier is the worldwide leader in efficient electronic procurement using mathematical optimization. Rovier’s Click and Optimize technology combines the power of state-of-the-art mathematical optimization, advanced data analytics, and smart mobile technology. Our team consists of worldwide leaders in the fields of information technology, mathematical optimization, and hotel/restaurant management. Our pioneering work in mathematical optimization has won the INFORMS Computing Society Prize and the Beale-Orchard-Hays Prize, two of the most prestigious international awards.</h1>
+        </div>
+        <div class="basis-1/2 shadow-lg rounded-lg mt-10 md:pt-0" id="contact">
+            <div data-tf-live="01HJS4NV5WRHJZW0BQX6DN6Q7E"></div><script src="//embed.typeform.com/next/embed.js"></script>
         </div>
         
     </div>

@@ -17,6 +17,10 @@ button.has-down .indicator { pointer-events:none; }
       z-index: -1;
       
 }
+@font-face {
+    font-family: 'Clash';
+    src: url('/ClashDisplay_Complete/Fonts/Variable/ClashDisplay-Variable.ttf') format("truetype-variations");
+  }
 
 .nanum {
     font-family: 'Nanum Myeongjo', serif !important;
@@ -25,7 +29,7 @@ button.has-down .indicator { pointer-events:none; }
     font-family: 'Inter', sans-serif !important;
 }
 .anybody {
-    font-family: 'Anybody', sans-serif !important;
+    font-family: 'Clash', sans-serif !important;
 }
 .grotesk {
     font-family: 'Hanken Grotesk', sans-serif !important;
