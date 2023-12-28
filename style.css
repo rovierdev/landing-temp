@@ -19,7 +19,7 @@ button.has-down .indicator { pointer-events:none; }
 }
 @font-face {
     font-family: 'Clash';
-    src: url('/ClashDisplay_Complete/Fonts/Variable/ClashDisplay-Variable.ttf') format("truetype-variations");
+    src: url('ClashDisplay-Variable.ttf') format("truetype-variations");
   }
 
 .nanum {
